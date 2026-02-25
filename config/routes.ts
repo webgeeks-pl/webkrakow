@@ -1,12 +1,16 @@
+import type { MessagesMap } from "@/config/i18n";
+
+export type RouteKey = keyof MessagesMap["common"]["navigation"]["routes"];
+
 export interface Route {
-    link: string;
+    link: RouteKey;
 }
 
 export type Routes = Route[];
 export type FooterRoutesKeys = "main" | "contact" | "legal";
 export type FooterRoutes = Record<FooterRoutesKeys, Routes>;
 export type NavigationRoutesKeys = "main" | "expandable" | "cta";
-export type NavigationRoutes = Record<string, Routes>;
+export type NavigationRoutes = Record<NavigationRoutesKeys, Routes>;
 
 export const routes: Routes = [
     { link: "/" },
@@ -25,7 +29,7 @@ export const legalRoutes: Routes = [
 export const navigationRoutes: NavigationRoutes = {
     main: routes,
     expandable: [],
-    cta: [],
+    cta: [{ link: "/contact" }],
 };
 
 export const footerRoutes: FooterRoutes = {

@@ -6,12 +6,12 @@ import Tag from "./tag";
 const textCva = cva("", {
     variants: {
         intent: {
-            h1: "text-4xl scroll-m-20 font-extrabold tracking-tight text-balance font-heading",
+            h1: "text-4xl scroll-m-20 font-extrabold tracking-tight text-balance ",
             h2: "scroll-m-20 text-3xl font-semibold tracking-tight",
             sectionHeader:
-                "scroll-m-20 text-3xl sm:text-4xl  tracking-normal md:text-5xl font-heading",
+                "scroll-m-20 text-3xl sm:text-4xl  tracking-normal md:text-5xl ",
             pageHeader:
-                "scroll-m-20 text-3xl sm:text-4xl font-medium tracking-normal md:text-6xl font-heading",
+                "scroll-m-20 text-3xl sm:text-4xl font-medium tracking-normal md:text-6xl ",
             h3: "text-2xl scroll-m-20 font-medium tracking-tight",
             h4: "text-xl scroll-m-20 font-medium tracking-tight",
             p: "text-base",
@@ -19,7 +19,7 @@ const textCva = cva("", {
             lead: "text-lg sm:text-xl",
             large: "text-lg font-medium",
             small: "text-sm leading-5 font-medium",
-            var: "font-monospace font-medium font-heading",
+            var: "font-monospace font-medium ",
         },
 
         color: {
@@ -52,20 +52,20 @@ const textCva = cva("", {
         {
             color: "primary",
             muted: true,
-            className: "text-clr-500",
+            className: "text-secondary-foreground",
         },
         {
             color: "primary",
             muted: false,
-            className: "text-clr-900",
+            className: "text-foreground",
         },
         // {
         //     color: "secondary",
         //     muted: true,
         //     className: "text-clr-brand-rose-light",
         // },
-        { color: "opposite", muted: true, className: "text-clr-200" },
-        { color: "opposite", muted: false, className: "text-clr-50" },
+        { color: "opposite", muted: true, className: "text-muted" },
+        { color: "opposite", muted: false, className: "text-background" },
 
         // { intent: "lead", color: "opposite", className: "text-clr-bg-dark" },
         // {

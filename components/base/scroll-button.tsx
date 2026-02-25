@@ -25,7 +25,7 @@ export type ScrollButtonProps = (ScrollAsButton | ScrollAsLink) & {
     routeMatchMode?: "exact" | "pathname" | "full";
 } & Partial<TagProps<any>>;
 
-export default function Scroll({
+export default function ScrollButton({
     as = "button",
     options,
     href,
@@ -41,7 +41,7 @@ export default function Scroll({
     const isSameRoute = useIsCurrPath(onRoute, { matchMode: routeMatchMode });
     const isLink = as === "link" && href;
 
-    function onClick(e: MouseEvent) {
+    function onClick() {
         if (!target) return;
 
         const element = document.querySelector(target);
@@ -65,7 +65,7 @@ export default function Scroll({
                 href={href}
                 className={["scroll-smooth", className].filter(Boolean).join(" ")}
                 onClick={(e) => {
-                    onClick(e);
+                    onClick();
                     if (typeof anchorProps.onClick === "function")
                         anchorProps.onClick(e as any);
                 }}

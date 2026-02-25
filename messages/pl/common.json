@@ -1,1 +1,22 @@
-{}
+{
+    "button": {
+        "submit": "Wyślij",
+        "cancel": "Anuluj"
+    },
+    "navigation": {
+        "routes": {
+            "/": "Strona główna",
+            "/about": "O nas",
+            "/contact": "Kontakt",
+            "/blog": "Blog",
+            "/offer": "Oferta",
+            "/services": "Usługi",
+            "/templates": "Szablony",
+            "/privacy-policy": "Polityka prywatności",
+            "/terms-of-service": "Regulamin"
+        },
+        "cta": {
+            "/contact": "Zamów stronę"
+        }
+    }
+}

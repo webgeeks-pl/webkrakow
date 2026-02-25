@@ -52,7 +52,7 @@ export function SectionContent({
     return (
         <div
             className={cn(
-                "xs:container max-w-size-content content-padding flex w-full flex-col items-center",
+                "xs:container max-w-content-width content-padding flex w-full flex-col items-center",
                 className
             )}
             {...props}
@@ -80,10 +80,7 @@ export function SectionHeaderContent({
 }) {
     return (
         <div
-            className={cn(
-                "flex-start mx-auto flex max-w-4xl flex-col gap-4 sm:gap-6 sm:text-center",
-                className
-            )}
+            className={cn("flex-start flex max-w-3xl flex-col gap-4 sm:gap-6", className)}
         >
             {children}
         </div>

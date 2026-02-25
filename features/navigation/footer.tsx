@@ -4,7 +4,7 @@ import { footerRoutes, FooterRoutesKeys, Route, Routes } from "@/config/routes";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { useCallback } from "react";
-import Section, { SectionContent } from "./section";
+import Section, { SectionContent } from "../../components/layout/section";
 
 interface FooterLinkProps {
     route: Route;

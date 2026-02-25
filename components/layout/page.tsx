@@ -1,7 +1,7 @@
+import ScrollToHashOnLoad from "@/controls/scroll-to-hash-on-load";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import Text, { TextProps } from "../base/text";
-import ScrollToHashOnLoad from "../ui/ScrollToHashOnLoad";
 import Section, { SectionContent } from "./section";
 
 export default function Page({

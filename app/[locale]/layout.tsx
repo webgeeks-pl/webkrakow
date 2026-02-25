@@ -1,21 +1,22 @@
 import Main from "@/components/layout/main";
-import Navbar from "@/components/layout/footer
-import Footer from "@/components/navigation/footer";
 import AppControls from "@/controls/app-controls";
+import Footer from "@/features/navigation/footer";
+import Navbar from "@/features/navigation/navbar";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/dist/client/components/navigation";
-import { Inter, Outfit, Silkscreen } from "next/font/google";
+import { Neonderthaw, Raleway, Tilt_Neon } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
-const silkscreen = Silkscreen({
+const neon = Tilt_Neon({ subsets: ["latin"], variable: "--font-neon" });
+
+const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
+const neonderthaw = Neonderthaw({
     subsets: ["latin"],
-    weight: "400",
-    variable: "--font-silkscreen",
+    weight: ["400"],
+    variable: "--font-neonderthaw",
 });
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ export default async function RootLayout({
     return (
         <html lang={locale}>
             <body
-                className={`${inter.variable} ${outfit.variable} ${silkscreen.variable} antialiased`}
+                className={`${raleway.variable} ${neon.variable} ${neonderthaw.variable} antialiased`}
             >
                 <AppControls>
                     <Navbar />
