@@ -43,7 +43,7 @@ export default async function RootLayout({
     setRequestLocale(locale);
 
     return (
-        <html lang={locale}>
+        <html lang={locale} className="overflow-x-hidden">
             <body
                 className={`${raleway.variable} ${neon.variable} ${neonderthaw.variable} antialiased`}
             >

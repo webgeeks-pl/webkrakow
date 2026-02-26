@@ -41,13 +41,13 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
+  /* --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+  --radius-4xl: calc(var(--radius) + 16px); */
 
 
     --spacing-content-width: 1536px;
@@ -68,7 +68,7 @@
 
 :root {
   interpolate-size: allow-keywords;
-  --radius: 0;
+  --radius: 0.5rem;
   --spacing: 0.25rem;
   --font-sans: var(--font-raleway), sans-serif;
   --font-heading: var(--font-neon), sans-serif;

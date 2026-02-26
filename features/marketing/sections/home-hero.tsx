@@ -1,7 +1,6 @@
 import NeonText from "@/components/base/neon-text";
 import Text from "@/components/base/text";
 import Section, { SectionContent } from "@/components/layout/section";
-import Lightning from "@/components/Lightning";
 import Rain from "@/components/Rain";
 import { Button } from "@/components/ui/button";
 
@@ -10,9 +9,9 @@ export default function HomeHero() {
         <Section className="h-screen min-h-screen overflow-hidden">
             <Rain count={250} speed={1.2} opacity={0.25} wind={6} className="z-15" />
             <div className="absolute top-0 -right-1/2 left-0 z-10 h-screen">
-                <Lightning />
+                {/* <Lightning speed={0.1} /> */}
             </div>
-            <div className="absolute top-0 right-0 left-0 z-15 h-screen bg-black/20" />
+            <div className="absolute top-0 right-0 left-0 z-15 h-screen" />
             <SectionContent className="z-20 flex h-full items-start justify-center">
                 <div className="mb-[20vh] flex flex-col items-start gap-8">
                     {/* <Text variant="h1" className="text-4xl md:text-5xl lg:text-6xl">
@@ -21,7 +20,8 @@ export default function HomeHero() {
                     <NeonText
                         text="Szybka strona dla Twojej firmy"
                         font="heading"
-                        className="text-4xl md:text-5xl lg:text-6xl"
+                        trigger="inView"
+                        className="text-4xl capitalize md:text-5xl lg:text-6xl"
                         glowSpread={0.75}
                         flicker={true}
                         flickerCount={3}

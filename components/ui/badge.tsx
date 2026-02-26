@@ -18,6 +18,7 @@ const badgeVariants = cva(
                     "border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground",
                 ghost: "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
                 link: "text-primary underline-offset-4 hover:underline",
+                neon: "bg-primary/60 hover:bg-primary/80 backdrop-blur-md text-foreground shadow-[0_0_1px_var(--color-primary),0_0_10px_var(--color-primary)] hover:shadow-[0_0_2px_var(--color-primary),0_0_12px_var(--color-primary),0_0_50px_var(--color-primary)] hover:border-primary/80 transition-shadow duration-300",
             },
         },
         defaultVariants: {

@@ -104,7 +104,7 @@ export function NavLink({
             variant={groupId === "desktop-cta" ? "neon" : "navLink"}
             asChild
             size={"marketing"}
-            className=""
+            className="font-heading uppercase"
         >
             <Link href={route.link}>
                 {isCta && ctaTransExist
